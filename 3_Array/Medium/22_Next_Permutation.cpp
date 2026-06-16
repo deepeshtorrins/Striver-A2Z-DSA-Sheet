@@ -59,7 +59,7 @@ vector<int> optimalApproach(vector<int> &arr) {
   }
 
   // Step 3: find element just greater than arr[index]
-  for(int i = n-1; i >= index; i--) {
+  for(int i = n-1; i > index; i--) {
     if(arr[i] > arr[index]) {
       swap(arr[i], arr[index]);
       break;

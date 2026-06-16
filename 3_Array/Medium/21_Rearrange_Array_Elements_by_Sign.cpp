@@ -34,10 +34,10 @@ vector<int> bruteForceApproach(vector<int> arr) {
   vector<int> neg;
 
   for(int i = 0; i < n; i++) {
-    if(arr[i] < 0) { // -ve
-      neg.push_back(arr[i]);
-    } else { // +v2
+    if(arr[i] > 0) { // +ve
       pos.push_back(arr[i]);
+    } else { // -v2
+      neg.push_back(arr[i]);
     }
   }
 
@@ -58,7 +58,7 @@ void betterApproach() {
   // not exist
 }
 
-// ! 3. Optimal Approach
+// ! 3. Optimal Approach (when number of positive and negative is equal)
 vector<int> optimalApproach(vector<int> arr) {
   int n = arr.size();
   
